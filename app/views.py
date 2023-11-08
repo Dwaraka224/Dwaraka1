@@ -1,10 +1,10 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 # Create your views here.
 
-from django.http import HttpResponse
 def dwaraka(request):
-    return HttpResponse('<h1><marquee>Hi Mama how are you</h1></marquee>')
+    return HttpResponse('hi mama')
 
-def basha(request):
-    return HttpResponse('<h1><marquee>Fine mama how about you</marquee></h1>')
+def macha(request):
+    return render(request,'macha.html')
